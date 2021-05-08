@@ -1,18 +1,16 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
+sidebar:
+    nav: "side"
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is my portfolio/blog site, I normally program games for university and as a hobby, as well as creating other non-games applications.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Socials:
+<ul>
+    <li><a href="https://github.com/Skuuully">Github</a> - Here you can find some of my code</li>
+    <li><a href="https://skuuully.itch.io">Itch</a> - Here you can find games that have made it to itch</li>
+</ul>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll

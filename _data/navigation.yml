@@ -1,7 +1,7 @@
 # Top bar
 main:
-  - title: "About"
-    url: http://localhost:4000/about/
+  - title: About
+    url: /about/
 
 # Sidebar
 side:

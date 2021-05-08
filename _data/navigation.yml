@@ -19,6 +19,8 @@ side:
         url: /portfolio/hivernation/
       - title: "Super jam"
         url: /portfolio/super/
+      - title: "GMTK2020"
+        url: /portfolio/gmtk2020/
 
   - title: Posts
     children:

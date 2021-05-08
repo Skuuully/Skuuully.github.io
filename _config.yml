@@ -172,7 +172,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "skuuully@gmail.com"
+      url: "mailto:skuuully@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/skuuully"

@@ -322,3 +322,5 @@ defaults:
       show_date: true 
       sidebar:
         nav: "side"
+
+theme: jekyll-theme-cayman

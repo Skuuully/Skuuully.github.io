@@ -11,6 +11,6 @@ This is my portfolio/blog site, I normally program games for university and as a
 Socials:
 <ul>
     <li><a href="https://github.com/Skuuully">Github</a> - Here you can find some of my code</li>
-    <li><a href="https://skuuully.itch.io">Itch</a> - Here you can find games that have made it to itch</li>
+    <li><a href="https://skuuully.itch.io">Itch</a> - Here you can find games I have worked on that have made it to itch</li>
 </ul>
 

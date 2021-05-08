@@ -8,12 +8,22 @@ side:
   - title: About
     url: "/about/"
 
-  - title: Posts
+  - title: Portfolio
+    url: /portfolio/
     children:
       - title: "Gravity"
-        url: /gravity/
+        url: /portfolio/gravity/
       - title: "Covid visualisation"
-        url: /cvrs/
+        url: /portfolio/cvrs/
+      - title: "Hivernation"
+        url: /portfolio/hivernation/
+      - title: "Super jam"
+        url: /portfolio/super/
+
+  - title: Posts
+    children:
+      - title: "Hello World"
+        url: /hello-world/
   
   - title: "CV"
     url: /_assets/CV.docx

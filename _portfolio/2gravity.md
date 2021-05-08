@@ -1,28 +1,43 @@
 ---
-layout: single
-title:  "Gravity game"
-date:   2021-05-08 11:08:00 +0100
-permalink: /gravity/
+title: "Gravity planet game"
+excerpt: "Small planet game investigating gravity"
+permalink: /portfolio/gravity/
+header:
+  teaser: /_assets/images/gravity/FlowField.png
+gallery:
+  - url: /_assets/images/gravity/WalkDemo.gif
+    image_path: _assets/images/gravity/WalkDemo.gif
+    alt: "Walking demo"
+  - url: /_assets/images/gravity/SelfShooting.gif
+    image_path: _assets/images/gravity/SelfShooting.gif
+    alt: "Self shoot"
+  - url: /_assets/images/gravity/SphereGrid.png
+    image_path: _assets/images/gravity/SphereGrid.png
+    alt: "Sphere grid"
+  - url: /_assets/images/gravity/SubdivComparison.png
+    image_path: _assets/images/gravity/SubdivComparison.png
+    alt: "Subdivision comparison"
+  - url: /_assets/images/gravity/FlowField.png
+    image_path: _assets/images/gravity/FlowField.png
+    alt: "Flow field"
 ---
+<!-- {% include gallery %} -->
 
-A university module required the creation of a game that looks at and implements an advanced physics topic, and an advanced AI topic. 
-For this I created the [following](https://skuuully.itch.io/planet-game) available for download.
-For the physics topic I looked at gravity such that an object being an attractee could be attracted to another object the attractor,
- allowing the attractees to be attracted to and move around an attractor. Then for the AI I wanted agents that could move around the surface
- of the attractor, this led me to discover flow field pathfinding. This led to the creation of a game where the player can move around
- small differently shaped planets shooting enemies that chase them, the game had an added element of uniqueness as players can shoot themselves
- when their bullets wrap back around the planet to hit them.
+A university module required the creation of a game that looks at and implements an advanced physics topic, and an advanced AI topic. For the physics topic I looked at gravity such that an object being an attractee could be attracted to another object the attractor, allowing the attractees to be attracted to and move around an attractor. Then for the AI I wanted agents that could move around the surface of the attractor, this led me to discover flow field pathfinding. This led to the creation of a game where the player can move around small differently shaped planets shooting enemies that chase them, the game had an added element of uniqueness as players can shoot themselves when their bullets wrap back around the planet to hit them.
 
 <h2>Physics: Gravity</h2>
 <p>The functionality is split out into two main parts, attractors and attractees. By doing so this allows control over which objects are attracted to the planets, and which objects serve as the planets. Attractees work using Unity’s rigidbody – however the rotation is frozen giving control of the rotation, and gravity disabled, allowing for a custom gravity implementation. The behaviour of an attractee is to find the attractors face that the attractee is nearest; this is done by ray casts. Once an attractor is found, use the surface normal from the ray cast to orient the object so that its up is in line with the surface normal. First a ray is cast downwards from the attractee, in most cases this will find the attractor, and for a spherical planet is the only method required. However, for cube shaped planets this alone will not work as walking off the edge of a body will not find the surface. In this scenario a cone of rays is cast below the player.</p>
+
 ![WalkDemo](/_assets/images/gravity/WalkDemo.gif)
 
 <p>Also implemented are projectiles that can be shot by the player. A projectile is an attractee, combining this with a constant forward force allows the projectile to move forwards. As it moves around a surface its forwards will change allowing it to wrap around a sphere. Most basic unity meshes have been tested that would make sense as a play space, such as sphere, cube, capsule, and cylinder. All allow the projectiles to move around them in a believable way.</p>
+
 ![Selfshoot](/_assets/images/gravity/SelfShooting.gif)
 <p>For this, assumptions are made that there is no air resistance, or changes in air pressure. The level of gravity also remains the same regardless of the distance from the surface, or centre of mass for the attractor. Additionally, all objects are assumed to be rigid. These assumptions are made, as including them would add extra complexity which is unnecessary for the game feel. As the attractor to use is always decided by looking below the attractee then we cannot transition from the sphere to the cube. The angle is too large between the two to be recognised. Another limitation is that models used as attractors must be fairly high poly for attractees to smoothly follow the shape of the object. Otherwise a low poly sphere for example may not feel very sphere like to move around.</p>
 
  <h2>AI: Flow field pathfinding</h2>
 <p>Flow-field pathfinding is used to allow pathfinding on the exterior of 3d objects. One of the main difficulties to implementing this is generating the nodes and connections to apply the pathfinding to. To generate the nodes the mesh data of the object is used. Foreach triangle in the mesh a node is created which is connected to the other nodes in the triangle. Only the shortest of the two connections are connected to avoid diagonal connections, diagonals can cause issues when obstacles are present. Once converted there will be multiple nodes with the same position where the triangles meet. So, merge nodes with the same position into one node containing all connections of the nodes in the same position. This can generate a grid to find a path on.</p>
+
 ![SphereGrid](/_assets/images/gravity/SphereGrid.png)
 
 As mesh data is used, this can present issues with there being too few nodes. To counter this the mesh may be subdivided multiple times first, decreasing the size of the mesh triangles but increasing the number of nodes in the grid making it more accurate. A comparison of a cube subdivided 0 times against 3 times can be seen below. To subdivide the mesh an external [source](https://wiki.unity3d.com/index.php/MeshHelper) has been used.
@@ -62,7 +77,7 @@ To make an agent that follows the field, a forward force is given, then when mov
 ![FlowField](/_assets/images/gravity/FlowField.png)
 
 <h2>Thanks for reading</h2>
-Reminder that the game can be downloaded [here](https://skuuully.itch.io/planet-game) to play
 
+[Download game here](https://skuuully.itch.io/planet-game)
 
-
+[Source code here](https://github.com/Skuuully/Gravity)

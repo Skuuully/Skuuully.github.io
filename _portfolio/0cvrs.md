@@ -1,9 +1,28 @@
 ---
-layout: single
-title:  "CVRS: Covid visualisation"
-date:   2021-05-08 11:10:00 +0100
-permalink: /cvrs/
+title: "CVRS"
+excerpt: "COVID-19 Virtual Reality Simulation"
+permalink: /portfolio/cvrs/
+header:
+  teaser: /_assets/images/cvrs/InfectionOutline.png
+gallery:
+  - url: /_assets/images/cvrs/InfectionOutline.png
+    image_path: _assets/images/cvrs/InfectionOutline.png
+    alt: "Infection outline"
+  - url: _assets/images/cvrs/InGameUI.png
+    image_path: _assets/images/cvrs/InGameUI.png
+    alt: "In game view"
+  - url: /_assets/images/cvrs/SIReq.png
+    image_path: _assets/images/cvrs/SIReq.png
+    alt: "Infectivity equation"
+  - url: /_assets/images/cvrs/Infectivity-eq.png
+    image_path: _assets/images/cvrs/Infectivity-eq.png
+    alt: "Infectivity equation"
+  - url: /_assets/images/cvrs/MaskComparison.png
+    image_path: _assets/images/cvrs/MaskComparison.png
+    alt: "Graphs"
+
 ---
+<!-- {% include gallery caption="Some images from within the application" %} -->
 
 For my independent studies dissertation I decided to look at creating a virtual reality application that depicts the transmission of COVID-19 in a university setting. The application allows for the transmission of COVID-19 between AI agents, and visualises this by using a border outline. The work builds upon that of a previous university student who created the base VR application which showcases social distancing between the agents. The project that I carried out then adds the transmission of a virus, a different view to perceive this within, a schedule system for the agents to follow, and a way to export the transmission that occurred for validation. The main idea behind building the project was to discover if presenting the data in this way is suitable, and if it could be used to help display the potential transmission to the general public.
 

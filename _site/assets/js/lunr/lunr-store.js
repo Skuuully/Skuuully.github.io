@@ -6,7 +6,7 @@ var store = [{
         "teaser": "/_assets/images/cvrs/InfectionOutline.png"
       },{
         "title": "Hivernation",
-        "excerpt":"Add the content for me here.  ","categories": [],
+        "excerpt":"This game was developed as a group over the course of ~3 months for a university submission, we used Unity with HDRP to create it. The idea for the game came out from the topic of city builder survival, from this the idea of this game happened. You build a...","categories": [],
         "tags": [],
         "url": "/portfolio/hivernation/",
         "teaser": "/_assets/images/hivernation/MainMenu.png"
@@ -18,13 +18,13 @@ var store = [{
         "teaser": "/_assets/images/gravity/FlowField.png"
       },{
         "title": "Super game jam ",
-        "excerpt":"Add the content for me here.  ","categories": [],
+        "excerpt":"For a 48 hour weekend game jam myself and a few friends got together to use Unreal Engine 4 to develop a game. The theme for the jam was “Super”, the theme proved to be rather generic and difficult to think of something different, however after some time one members...","categories": [],
         "tags": [],
         "url": "/portfolio/super/",
         "teaser": "/_assets/images/super/Super.png"
       },{
         "title": "GMTK 2020",
-        "excerpt":"Add the content for me here.  ","categories": [],
+        "excerpt":"The theme for the GMTK jam was “out of control”, for this I had the idea of a turn based game where the player decides their actions and has a chance of their action being taken from them. To help make the game not feel so bad when the player...","categories": [],
         "tags": [],
         "url": "/portfolio/gmtk2020/",
         "teaser": "/_assets/images/gmtk2020/Main.png"

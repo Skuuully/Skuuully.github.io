@@ -11,12 +11,12 @@ side:
   - title: Portfolio
     url: /portfolio/
     children:
-      - title: "Gravity"
-        url: /portfolio/gravity/
-      - title: "Covid visualisation"
-        url: /portfolio/cvrs/
       - title: "Hivernation"
         url: /portfolio/hivernation/
+      - title: "Covid visualisation"
+        url: /portfolio/cvrs/
+      - title: "Gravity"
+        url: /portfolio/gravity/
       - title: "Super jam"
         url: /portfolio/super/
       - title: "GMTK2020"

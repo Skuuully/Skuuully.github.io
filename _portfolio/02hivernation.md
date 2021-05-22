@@ -6,6 +6,8 @@ header:
   teaser: /_assets/images/hivernation/MainMenu.png
 ---
 
+Game downloadable from [itch](https://skuuully.itch.io/hivernation)
+
 This game was developed as a group over the course of ~3 months for a university submission, we used Unity with HDRP to create it. The idea for the game came out from the topic of city builder survival, from this the idea of this game happened. You build a colony of bees, assigning them to tasks to defend from oncoming waves of enemy wasps. As part of the submission a trailer and lets play were required, this component was handily done by a teammate and gives a brief look at what was created.
 Trailer:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sVEsMqx3krQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

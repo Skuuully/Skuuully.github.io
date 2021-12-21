@@ -6,7 +6,7 @@ var store = [{
         "teaser": "/_assets/images/cvrs/InfectionOutline.png"
       },{
         "title": "Hivernation",
-        "excerpt":"This game was developed as a group over the course of ~3 months for a university submission, we used Unity with HDRP to create it. The idea for the game came out from the topic of city builder survival, from this the idea of this game happened. You build a...","categories": [],
+        "excerpt":"Game downloadable from itch This game was developed as a group over the course of ~3 months for a university submission, we used Unity with HDRP to create it. The idea for the game came out from the topic of city builder survival, from this the idea of this game...","categories": [],
         "tags": [],
         "url": "/portfolio/hivernation/",
         "teaser": "/_assets/images/hivernation/MainMenu.png"
@@ -33,5 +33,11 @@ var store = [{
         "excerpt":"This weekend I discovered that github pages allows for free web hosting as long as I use this specific site name. So now I’ve finally had more of a reason to set up a website, this may be used for a blog section but more importantly it will be used...","categories": [],
         "tags": [],
         "url": "/hello-world/",
+        "teaser": null
+      },{
+        "title": "VRST Publication",
+        "excerpt":"During my final year of university I produced a COVID-19 simulation taking place within a replica of the University of Derby’s Markeaton campus. The user actively partakes in the simulation and is able to transmit the virus between themselves and AI agents. We decided to pursue a publication of this...","categories": [],
+        "tags": [],
+        "url": "/vrst-publication/",
         "teaser": null
       }]

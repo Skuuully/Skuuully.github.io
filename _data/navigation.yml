@@ -24,6 +24,8 @@ side:
 
   - title: Posts
     children:
+      - title: "VRST Publication"
+        url: /vrst-publication/
       - title: "Hello World"
         url: /hello-world/
   

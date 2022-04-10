@@ -6,7 +6,7 @@ sidebar:
     nav: "side"
 ---
 
-This is my portfolio/blog site, I have finished my university course on Computer Games Programming, as well as creating other non-games applications. The main languages that I have used are C# with Unity, and Java and C++ during an industrial placement year.
+This is my portfolio/blog site, I have finished my university course on Computer Games Programming, as well as creating other non-games applications. The main languages that I have used are C# with Unity, and Java and C++.
 
 Socials:
 <ul>
